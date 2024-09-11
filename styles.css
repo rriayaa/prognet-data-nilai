@@ -1,0 +1,82 @@
+/* CSS untuk styling halaman */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef6f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Menambahkan text-align center untuk konten di dalam container */
+    animation: fadeIn 1.5s ease-in-out; /* Animasi lembut untuk kontainer */
+}
+
+h1 {
+    color: #d57b8d;
+    margin-bottom: 20px;
+    animation: none; /* Menghilangkan animasi bounce untuk h1 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto; /* Menambahkan margin auto untuk men-center tabel */
+    animation: fadeIn 1.5s ease-in-out; /* Animasi lembut untuk tabel */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center; /* Menambahkan text-align center untuk kolom tabel */
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #d57b8d;
+    color: white;
+    /* Menambahkan animasi berwarna pada header tabel */
+    animation: highlight 2s ease-in-out infinite alternate;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0a9a9;
+    transition: background-color 0.3s ease; /* Transisi halus untuk hover efek */
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Animasi untuk fade in efek */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animasi highlight untuk header tabel */
+@keyframes highlight {
+    from {
+        background-color: #d57b8d;
+    }
+    to {
+        background-color: #b34455;
+    }
+}
